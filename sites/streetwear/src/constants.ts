@@ -103,6 +103,11 @@ export const TESTIMONIALS = [
   }
 ];
 
+export const CLIENT_LOGOS = [
+  "Canal+", "ESSEC", "ESCP", "Lactalis", "France Football",
+  "Sciences Po", "Centrale Supélec", "L'Oréal", "Sorbonne"
+];
+
 export const CONTACT = {
   email: "service.contact@jabb.fr",
   phone: "+33 1 84 80 14 49",

@@ -5,6 +5,10 @@ import { Home } from './pages/Home';
 import { Shop } from './pages/Shop';
 import { Custom } from './pages/Custom';
 import { Story } from './pages/Story';
+import { Events } from './pages/Events';
+import { RSE } from './pages/RSE';
+import { Ambassadors } from './pages/Ambassadors';
+import { Realisations } from './pages/Realisations';
 
 export default function App() {
   return (
@@ -15,6 +19,10 @@ export default function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/custom" element={<Custom />} />
           <Route path="/story" element={<Story />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/rse" element={<RSE />} />
+          <Route path="/ambassadeurs" element={<Ambassadors />} />
+          <Route path="/realisations" element={<Realisations />} />
         </Routes>
       </Layout>
     </Router>

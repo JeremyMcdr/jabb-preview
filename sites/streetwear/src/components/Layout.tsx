@@ -4,10 +4,12 @@ import { Search, Heart, ShoppingBag, Shirt, Menu, X, Mail, Phone, MapPin, Instag
 import { CONTACT } from '../constants';
 
 const NAV_LINKS = [
-  { label: "T-shirts", path: "/shop?cat=T-shirts" },
-  { label: "Hoodies", path: "/shop?cat=Hoodies" },
-  { label: "Custom", path: "/custom", highlight: true },
-  { label: "Accessoires", path: "/shop?cat=Accessoires" },
+  { label: "Nos Services", path: "/custom" },
+  { label: "Catalogues", path: "/shop" },
+  { label: "Réalisations", path: "/realisations" },
+  { label: "RSE", path: "/rse" },
+  { label: "Ambassadeurs", path: "/ambassadeurs" },
+  { label: "Events", path: "/events", highlight: true },
 ];
 
 const Navbar = () => {
@@ -124,19 +126,21 @@ const Footer = () => (
         <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-blue text-sm">Menu</h4>
         <ul className="flex flex-col gap-4 text-slate-400 text-sm">
           <li><Link to="/" className="hover:text-white transition-colors">Accueil</Link></li>
-          <li><Link to="/shop" className="hover:text-white transition-colors">La Collection</Link></li>
-          <li><Link to="/custom" className="hover:text-white transition-colors">Espace Custom</Link></li>
+          <li><Link to="/shop" className="hover:text-white transition-colors">Catalogues</Link></li>
+          <li><Link to="/custom" className="hover:text-white transition-colors">Nos Services</Link></li>
+          <li><Link to="/realisations" className="hover:text-white transition-colors">Réalisations</Link></li>
+          <li><Link to="/events" className="hover:text-white transition-colors">Jabb Events</Link></li>
           <li><Link to="/story" className="hover:text-white transition-colors">Notre Atelier</Link></li>
         </ul>
       </div>
 
       <div>
-        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-blue text-sm">Aide</h4>
+        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-blue text-sm">Engagements</h4>
         <ul className="flex flex-col gap-4 text-slate-400 text-sm">
-          <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-          <li><a href="#" className="hover:text-white transition-colors">Livraison</a></li>
-          <li><a href="#" className="hover:text-white transition-colors">Retours</a></li>
-          <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+          <li><Link to="/rse" className="hover:text-white transition-colors">RSE</Link></li>
+          <li><Link to="/ambassadeurs" className="hover:text-white transition-colors">Ambassadeurs</Link></li>
+          <li><a href="#" className="hover:text-white transition-colors">Mentions Légales</a></li>
+          <li><a href="#" className="hover:text-white transition-colors">CGV</a></li>
         </ul>
       </div>
     </div>
