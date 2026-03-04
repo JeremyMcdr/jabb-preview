@@ -1,0 +1,13 @@
+{
+  "name": "jabb-preview",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build:modern-colored && npm run build:streetwear && npm run build:urban-neon && npm run build:modern-b2b && npm run build:combine",
+    "build:modern-colored": "cd sites/modern-colored && npm ci && npx vite build",
+    "build:streetwear": "cd sites/streetwear && npm ci && npx vite build",
+    "build:urban-neon": "cd sites/urban-neon && npm ci && npx vite build",
+    "build:modern-b2b": "cd sites/modern-b2b && npm ci && npx vite build",
+    "build:combine": "node scripts/combine.mjs"
+  }
+}

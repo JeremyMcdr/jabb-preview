@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JABB | Propositions de maquettes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f6f6f8;
+      color: #1a1a2e;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .logo-icon {
+      width: 40px; height: 40px;
+      background: #1152d4;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-icon svg { width: 24px; height: 24px; }
+    .logo-text { font-size: 28px; font-weight: 900; letter-spacing: -0.04em; }
+    header p {
+      color: #64748b;
+      font-size: 18px;
+      font-weight: 500;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .badge {
+      display: inline-block;
+      background: #1152d4;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      padding: 40px 0 80px;
+    }
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    /* Card */
+    .card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      border-color: #1152d4;
+    }
+    .card-preview {
+      height: 240px;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-preview-bg {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .card:hover .card-preview-bg { transform: scale(1.05); }
+    .card-body { padding: 28px; }
+    .card-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 8px;
+    }
+    .card-title {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .card-desc {
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .card-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: #f1f5f9;
+      color: #475569;
+    }
+    .card-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #1152d4;
+    }
+    .card-cta svg { transition: transform 0.2s; }
+    .card:hover .card-cta svg { transform: translateX(4px); }
+
+    /* Concept colors */
+    .concept-a .card-label { color: #003368; }
+    .concept-a .card-preview { background: #003368; }
+    .concept-b .card-label { color: #258df4; }
+    .concept-b .card-preview { background: #0c0c0c; }
+    .concept-c .card-label { color: #8c25f4; }
+    .concept-c .card-preview { background: #0a0a0c; }
+    .concept-d .card-label { color: #1152d4; }
+    .concept-d .card-preview { background: #f6f6f8; }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #94a3b8;
+      font-size: 13px;
+      font-weight: 500;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-icon">
+          <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="white" fill-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="logo-text">JABB</span>
+      </div>
+      <div class="badge">Propositions de maquettes</div>
+      <p>4 directions artistiques pour votre nouveau site vitrine. Cliquez sur un concept pour le visualiser.</p>
+    </header>
+
+    <div class="grid">
+      <!-- Concept A -->
+      <a href="./modern-colored/" class="card concept-a">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background: linear-gradient(135deg, #003368 0%, #4d9ad2 50%, #009c14 100%); display:flex; align-items:center; justify-content:center;">
+            <span style="color:white; font-size:48px; font-weight:900; opacity:0.3;">A</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Concept A</div>
+          <div class="card-title">B2B Corporate</div>
+          <div class="card-desc">Direction corporate avec les couleurs officielles JABB. Palette navy/vert/bleu, police Poppins. Approche institutionnelle avec toutes les pages (RSE, Ambassadeurs, Realisations).</div>
+          <div class="card-tags">
+            <span class="tag">Poppins</span>
+            <span class="tag">Navy #003368</span>
+            <span class="tag">8 pages</span>
+          </div>
+          <div class="card-cta">
+            Voir le concept
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Concept B -->
+      <a href="./streetwear/" class="card concept-b">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background: linear-gradient(135deg, #0c0c0c 0%, #258df4 60%, #e2ff3b 100%); display:flex; align-items:center; justify-content:center;">
+            <span style="color:white; font-size:48px; font-weight:900; opacity:0.3;">B</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Concept B</div>
+          <div class="card-title">Streetwear</div>
+          <div class="card-desc">Direction streetwear B2C avec un ton jeune et dynamique. Fond sombre, accent bleu/jaune acide, split-screen hero, masonry grid et marquee banniere.</div>
+          <div class="card-tags">
+            <span class="tag">Space Grotesk</span>
+            <span class="tag">Blue #258df4</span>
+            <span class="tag">Acid Yellow</span>
+          </div>
+          <div class="card-cta">
+            Voir le concept
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Concept C -->
+      <a href="./urban-neon/" class="card concept-c">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background: linear-gradient(135deg, #0a0a0c 0%, #8c25f4 50%, #ccff00 100%); display:flex; align-items:center; justify-content:center;">
+            <span style="color:white; font-size:48px; font-weight:900; opacity:0.3;">C</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Concept C</div>
+          <div class="card-title">Urban Neon</div>
+          <div class="card-desc">Direction cyberpunk avec theme sombre intégral. Violet néon + vert fluo, éléments skewed/tilted, ombres colorées, effets glow. Le plus audacieux.</div>
+          <div class="card-tags">
+            <span class="tag">Space Grotesk</span>
+            <span class="tag">Purple #8c25f4</span>
+            <span class="tag">Neon Green</span>
+          </div>
+          <div class="card-cta">
+            Voir le concept
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- Concept D -->
+      <a href="./modern-b2b/" class="card concept-d">
+        <div class="card-preview">
+          <div class="card-preview-bg" style="background: linear-gradient(135deg, #f6f6f8 0%, #1152d4 60%, #101622 100%); display:flex; align-items:center; justify-content:center;">
+            <span style="color:white; font-size:48px; font-weight:900; opacity:0.3;">D</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-label">Concept D</div>
+          <div class="card-title">Modern B2B</div>
+          <div class="card-desc">Direction clean et premium pour le B2B. Fond clair, bleu royal, police Inter, cartes arrondies, processus en 3 étapes, prix HT. Le plus professionnel.</div>
+          <div class="card-tags">
+            <span class="tag">Inter</span>
+            <span class="tag">Royal Blue #1152d4</span>
+            <span class="tag">Light Theme</span>
+          </div>
+          <div class="card-cta">
+            Voir le concept
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      Maquettes JABB &mdash; Propositions confidentielles
+    </div>
+  </footer>
+</body>
+</html>
