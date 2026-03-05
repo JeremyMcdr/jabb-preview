@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Search, Heart, ShoppingBag, Shirt, Menu, X, Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Heart, ShoppingBag, Shirt, Menu, X, Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from 'lucide-react';
 import { CONTACT } from '../constants';
 
 const NAV_LINKS = [
@@ -40,14 +40,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="hidden lg:flex items-center bg-slate-200/50 rounded-full px-4 py-2">
-            <Search size={16} className="text-slate-500" />
-            <input
-              className="bg-transparent border-none focus:outline-none text-sm w-40 ml-2"
-              placeholder="Search..."
-              type="text"
-            />
-          </div>
           <button className="p-2 hover:bg-jabb-blue/10 rounded-full transition-colors">
             <Heart size={20} />
           </button>
