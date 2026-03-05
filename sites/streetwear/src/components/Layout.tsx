@@ -4,12 +4,11 @@ import { Search, Heart, ShoppingBag, Shirt, Menu, X, Mail, Phone, MapPin, Instag
 import { CONTACT } from '../constants';
 
 const NAV_LINKS = [
-  { label: "Nos Services", path: "/custom" },
+  { label: "Services", path: "/custom" },
   { label: "Catalogues", path: "/shop" },
   { label: "Réalisations", path: "/realisations" },
   { label: "RSE", path: "/rse" },
   { label: "Ambassadeurs", path: "/ambassadeurs" },
-  { label: "Events", path: "/events", highlight: true },
 ];
 
 const Navbar = () => {
@@ -31,11 +30,9 @@ const Navbar = () => {
               <Link
                 key={link.label}
                 to={link.path}
-                className={`text-sm font-bold uppercase hover:text-jabb-blue transition-colors ${
-                  link.highlight ? 'text-jabb-blue' : ''
-                }`}
+                className="text-sm font-bold uppercase hover:text-jabb-blue transition-colors whitespace-nowrap"
               >
-                {link.label} {link.highlight && '✨'}
+                {link.label}
               </Link>
             ))}
           </nav>
@@ -76,7 +73,7 @@ const Navbar = () => {
               onClick={() => setMobileOpen(false)}
               className="block py-3 px-4 rounded-xl text-sm font-bold uppercase tracking-widest hover:bg-jabb-blue/5 transition-colors"
             >
-              {link.label} {link.highlight && '✨'}
+              {link.label}
             </Link>
           ))}
         </div>
