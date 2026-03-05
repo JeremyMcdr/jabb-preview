@@ -9,6 +9,7 @@ import { Events } from './pages/Events';
 import { RSE } from './pages/RSE';
 import { Ambassadors } from './pages/Ambassadors';
 import { Realisations } from './pages/Realisations';
+import { Antennes } from './pages/Antennes';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/rse" element={<RSE />} />
           <Route path="/ambassadeurs" element={<Ambassadors />} />
           <Route path="/realisations" element={<Realisations />} />
+          <Route path="/antennes" element={<Antennes />} />
         </Routes>
       </Layout>
     </Router>
