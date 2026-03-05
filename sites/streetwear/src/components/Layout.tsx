@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: "Réalisations", path: "/realisations" },
   { label: "RSE", path: "/rse" },
   { label: "Ambassadeurs", path: "/ambassadeurs" },
+  { label: "Antennes", path: "/antennes" },
 ];
 
 const Navbar = () => {
