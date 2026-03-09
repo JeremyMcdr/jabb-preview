@@ -118,10 +118,10 @@ const ProductCard: React.FC<{ product: typeof CATALOGUE[0]; offset?: boolean }> 
         alt={product.name}
         loading="lazy"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
       <div className="absolute bottom-6 left-6 right-6">
-        <h3 className="text-white text-xl font-black uppercase tracking-tight">{product.name}</h3>
-        {product.ref && <p className="text-white/60 text-xs font-bold mt-1">Réf. {product.ref}</p>}
+        <h3 className="text-white text-xl font-black uppercase tracking-tight drop-shadow-md">{product.name}</h3>
+        {product.ref && <p className="text-white/70 text-xs font-bold mt-1 drop-shadow-md">Réf. {product.ref}</p>}
       </div>
       <div className={`absolute top-4 left-4 ${product.tagStyle} font-black px-3 py-1 rounded-full text-sm ${product.rotation} shadow-lg`}>
         {product.price}
