@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Heart, ShoppingBag, Shirt, Menu, X, Mail, Phone, MapPin, Instagram, Linkedin, Facebook, Zap, Send, CheckCircle2, MessageCircle } from 'lucide-react';
+import { Shirt, Menu, X, Mail, Phone, MapPin, Instagram, Linkedin, Facebook, Zap, Send, CheckCircle2, MessageCircle, Leaf } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CONTACT } from '../constants';
 
@@ -9,20 +9,22 @@ const QuoteModalContext = createContext<{ open: () => void }>({ open: () => {} }
 export const useQuoteModal = () => useContext(QuoteModalContext);
 
 const NAV_LINKS = [
-  { label: "T-shirts", path: "/shop?cat=T-shirts" },
-  { label: "Hoodies", path: "/shop?cat=Hoodies" },
-  { label: "Accessoires", path: "/shop?cat=Accessoires" },
+  { label: "Textile", path: "/textile" },
+  { label: "Goodies", path: "/goodies" },
+  { label: "JABB Green", path: "/jabb-green", green: true },
   { label: "Réalisations", path: "/realisations" },
-  { label: "Antennes", path: "/antennes" },
+  { label: "Ambassadeurs", path: "/ambassadeurs" },
+  { label: "Franchises", path: "/franchises" },
 ];
 
 const PRODUCT_TYPES = [
-  "T-shirt",
-  "Hoodie / Sweat",
-  "Polo",
-  "Veste / Bomber",
-  "Casquette",
-  "Tote bag",
+  "T-shirt / Polo",
+  "Sweat / Hoodie",
+  "Veste / Softshell",
+  "Casquette / Chapeau",
+  "Tote bag / Sac",
+  "Gourde / Mug",
+  "Stylo / Carnet",
   "Goodies / Objets",
   "Autre",
 ];
@@ -88,7 +90,6 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
               </div>
             ) : (
               <div className="p-8 md:p-10">
-                {/* Header with speed badge */}
                 <div className="flex items-start gap-4 mb-8">
                   <div className="bg-jabb-blue p-3 rounded-xl text-white shrink-0">
                     <Zap size={24} />
@@ -100,38 +101,37 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 block mb-1.5">Nom *</label>
-                      <input
-                        required
-                        type="text"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Jean Dupont"
-                        className="w-full bg-slate-50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-jabb-blue/20 text-sm"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 block mb-1.5">Email *</label>
-                      <input
-                        required
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="jean@entreprise.com"
-                        className="w-full bg-slate-50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-jabb-blue/20 text-sm"
-                      />
-                    </div>
+                  <div>
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 block mb-1.5">Nom *</label>
+                    <input
+                      required
+                      type="text"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="Jean Dupont"
+                      className="w-full bg-slate-50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-jabb-blue/20 text-sm"
+                    />
                   </div>
 
                   <div>
-                    <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 block mb-1.5">Téléphone <span className="text-slate-300">(optionnel)</span></label>
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 block mb-1.5">Téléphone *</label>
                     <input
+                      required
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="06 00 00 00 00"
+                      className="w-full bg-slate-50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-jabb-blue/20 text-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 block mb-1.5">Email <span className="text-slate-300">(optionnel)</span></label>
+                    <input
+                      type="email"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      placeholder="jean@entreprise.com"
                       className="w-full bg-slate-50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-jabb-blue/20 text-sm"
                     />
                   </div>
@@ -183,7 +183,6 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
                   </button>
 
                   <div className="flex items-center justify-center gap-6 pt-2 text-xs text-slate-400">
-                    <span className="flex items-center gap-1"><CheckCircle2 size={12} className="text-green-500" /> Gratuit</span>
                     <span className="flex items-center gap-1"><CheckCircle2 size={12} className="text-green-500" /> Sans engagement</span>
                     <span className="flex items-center gap-1"><CheckCircle2 size={12} className="text-green-500" /> Réponse rapide</span>
                   </div>
@@ -209,15 +208,16 @@ const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
             <div className="size-8 bg-jabb-blue rounded-lg flex items-center justify-center text-white">
               <Shirt size={20} />
             </div>
-            <span className="text-xl lg:text-2xl font-bold tracking-tighter uppercase italic">Jabb</span>
+            <span className="text-xl lg:text-2xl font-bold tracking-tighter uppercase italic">JABB</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             {NAV_LINKS.map(link => (
               <Link
                 key={link.label}
                 to={link.path}
-                className="text-sm font-bold uppercase hover:text-jabb-blue transition-colors whitespace-nowrap"
+                className={`text-sm font-bold uppercase hover:text-jabb-blue transition-colors whitespace-nowrap ${link.green ? 'text-green-600 hover:text-green-700' : ''}`}
               >
+                {link.green && <Leaf size={14} className="inline mr-1 -mt-0.5" />}
                 {link.label}
               </Link>
             ))}
@@ -252,8 +252,9 @@ const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
               key={link.label}
               to={link.path}
               onClick={() => setMobileOpen(false)}
-              className="block py-3 px-4 rounded-xl text-sm font-bold uppercase tracking-widest hover:bg-jabb-blue/5 transition-colors"
+              className={`block py-3 px-4 rounded-xl text-sm font-bold uppercase tracking-widest hover:bg-jabb-blue/5 transition-colors ${link.green ? 'text-green-600' : ''}`}
             >
+              {link.green && <Leaf size={14} className="inline mr-1 -mt-0.5" />}
               {link.label}
             </Link>
           ))}
@@ -267,10 +268,10 @@ const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
 };
 
 // ── Floating Contact Buttons ──────────────────────────────────
-const FloatingButtons = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
+const FloatingButtons = () => (
   <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
     <a
-      href={`https://wa.me/33184801449`}
+      href={`https://wa.me/${CONTACT.whatsapp.replace(/[^0-9]/g, '')}`}
       target="_blank"
       rel="noopener noreferrer"
       className="size-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 transition-transform"
@@ -297,10 +298,10 @@ const Footer = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
           <div className="size-10 bg-jabb-blue rounded-lg flex items-center justify-center text-white">
             <Shirt size={22} />
           </div>
-          <span className="text-3xl font-black uppercase italic">Jabb</span>
+          <span className="text-3xl font-black uppercase italic">JABB</span>
         </div>
         <p className="text-slate-400 max-w-sm mb-6">
-          Le laboratoire créatif de ton style. On transforme tes idées en pièces de mode uniques et durables. Devis en - de 2h.
+          Textile et Goodies personnalisés pour toutes les enseignes. Devis express en - de 2h.
         </p>
         <div className="space-y-2 text-sm text-slate-400 mb-6">
           <a href={`mailto:${CONTACT.email}`} className="flex items-center gap-2 hover:text-white transition-colors">
@@ -327,13 +328,15 @@ const Footer = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
       </div>
 
       <div>
-        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-blue text-sm">Produits</h4>
+        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-blue text-sm">Catégories</h4>
         <ul className="flex flex-col gap-4 text-slate-400 text-sm">
-          <li><Link to="/shop?cat=T-shirts" className="hover:text-white transition-colors">T-shirts</Link></li>
-          <li><Link to="/shop?cat=Hoodies" className="hover:text-white transition-colors">Hoodies & Sweats</Link></li>
-          <li><Link to="/shop?cat=Accessoires" className="hover:text-white transition-colors">Accessoires</Link></li>
+          <li><Link to="/" className="hover:text-white transition-colors">Page de garde</Link></li>
+          <li><Link to="/textile" className="hover:text-white transition-colors">Textile</Link></li>
+          <li><Link to="/goodies" className="hover:text-white transition-colors">Goodies</Link></li>
+          <li><Link to="/jabb-green" className="hover:text-white transition-colors flex items-center gap-1"><Leaf size={12} /> JABB Green</Link></li>
           <li><Link to="/realisations" className="hover:text-white transition-colors">Réalisations</Link></li>
-          <li><Link to="/antennes" className="hover:text-white transition-colors">Nos Antennes</Link></li>
+          <li><Link to="/ambassadeurs" className="hover:text-white transition-colors">Ambassadeurs</Link></li>
+          <li><Link to="/franchises" className="hover:text-white transition-colors">Franchises</Link></li>
         </ul>
       </div>
 
@@ -342,19 +345,19 @@ const Footer = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
         <ul className="flex flex-col gap-4 text-slate-400 text-sm">
           <li><button onClick={onOpenQuote} className="hover:text-white transition-colors">Devis Express</button></li>
           <li><a href={`tel:${CONTACT.phone}`} className="hover:text-white transition-colors">Appeler</a></li>
-          <li><a href="https://wa.me/33184801449" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp</a></li>
-          <li><a href="#" className="hover:text-white transition-colors">Mentions Légales</a></li>
-          <li><a href="#" className="hover:text-white transition-colors">CGV</a></li>
+          <li><a href={`mailto:${CONTACT.email}`} className="hover:text-white transition-colors">Mail</a></li>
         </ul>
+        <div className="mt-8 pt-6 border-t border-slate-800">
+          <ul className="flex flex-col gap-3 text-slate-500 text-xs">
+            <li><a href="#" className="hover:text-white transition-colors">Mentions Légales</a></li>
+            <li><a href="#" className="hover:text-white transition-colors">CGV</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-20 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p className="text-slate-500 text-sm">&copy; 2025 Jabb. Tous droits réservés.</p>
-      <div className="flex gap-6 text-slate-500 text-sm">
-        <a href="#" className="hover:text-white transition-colors">Mentions Légales</a>
-        <a href="#" className="hover:text-white transition-colors">CGV</a>
-      </div>
+      <p className="text-slate-500 text-sm">&copy; 2025 JABB. Tous droits réservés.</p>
     </div>
   </footer>
 );
@@ -370,7 +373,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         <Navbar onOpenQuote={openQuote} />
         <main className="flex-grow">{children}</main>
         <Footer onOpenQuote={openQuote} />
-        <FloatingButtons onOpenQuote={openQuote} />
+        <FloatingButtons />
         <QuoteModal isOpen={quoteOpen} onClose={() => setQuoteOpen(false)} />
       </div>
     </QuoteModalContext.Provider>
