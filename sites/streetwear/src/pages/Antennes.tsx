@@ -190,7 +190,7 @@ const FranceMap = ({ activeRegion, onDeptHover, onDeptClick, hoveredDept }: {
   </svg>
 );
 
-export const Antennes = () => {
+export const Franchises = () => {
   const [activeRegion, setActiveRegion] = useState<string | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
   const [hoveredDept, setHoveredDept] = useState<Department | null>(null);
