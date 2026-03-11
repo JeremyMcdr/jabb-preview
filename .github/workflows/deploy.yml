@@ -26,31 +26,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Build modern-colored
-        run: cd sites/modern-colored && npm ci && npx vite build
-
       - name: Build streetwear
         run: cd sites/streetwear && npm ci && npx vite build
-
-      - name: Build urban-neon
-        run: cd sites/urban-neon && npm ci && npx vite build
-
-      - name: Build modern-b2b
-        run: cd sites/modern-b2b && npm ci && npx vite build
-
-      - name: Combine into _site
-        run: |
-          mkdir -p _site
-          cp -r sites/modern-colored/dist _site/modern-colored
-          cp -r sites/streetwear/dist _site/streetwear
-          cp -r sites/urban-neon/dist _site/urban-neon
-          cp -r sites/modern-b2b/dist _site/modern-b2b
-          cp landing/index.html _site/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: sites/streetwear/dist
 
   deploy:
     environment:
