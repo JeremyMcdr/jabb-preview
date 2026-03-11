@@ -173,14 +173,14 @@ export default function ProductDetail() {
               </a>
             )}
 
-            <a
+            {/* <a
               href={product.supplierLink}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 text-slate-400 hover:text-jabb-blue text-sm font-bold transition-colors py-2"
             >
               <ExternalLink size={14} /> Voir chez le fournisseur
-            </a>
+            </a> */}
           </div>
         </motion.div>
       </div>

@@ -16,7 +16,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
           style={{
-            backgroundImage: `url('/images/photos/showroom-wide.jpeg')`
+            backgroundImage: `url('${import.meta.env.BASE_URL}images/photos/showroom-wide.jpeg')`
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
