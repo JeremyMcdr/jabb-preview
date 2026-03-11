@@ -7,13 +7,13 @@ const EVENTS = [
   {
     title: "Professionnels",
     description: "Solutions sur mesure pour les entreprises : séminaires, conférences, lancements de produits et team building.",
-    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/photos/team-brainstorming.jpeg",
     tags: ["B2B", "Corporate", "Team Building"]
   },
   {
     title: "Étudiants",
     description: "Spécialiste des événements étudiants : soirées, galas ou festivals, adaptés aux besoins du public étudiant.",
-    image: "https://images.unsplash.com/photo-1514525253361-bee8718a74a2?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/photos/team-group-fun.jpeg",
     tags: ["Gala", "Festival", "Associations"]
   }
 ];
@@ -60,7 +60,7 @@ export const Events = () => (
             </div>
             <h2 className="text-5xl font-bold uppercase tracking-tighter">{event.title}</h2>
             <p className="text-lg opacity-80 font-medium max-w-md">{event.description}</p>
-            <Link to="/custom" className="inline-flex items-center gap-3 bg-jabb-accent text-slate-900 px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all">
+            <Link to="/custom" className="inline-flex items-center gap-3 bg-jabb-accent text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all">
               En Savoir Plus <ArrowRight size={18} />
             </Link>
           </div>
@@ -82,7 +82,7 @@ export const Events = () => (
 
     <div className="bg-jabb-blue rounded-3xl p-12 md:p-20 text-center text-white">
       <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8">Discutons de votre prochain événement</h2>
-      <Link to="/custom" className="inline-flex bg-jabb-accent text-slate-900 px-12 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">
+      <Link to="/custom" className="inline-flex bg-jabb-accent text-white px-12 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">
         Prendre Contact
       </Link>
     </div>

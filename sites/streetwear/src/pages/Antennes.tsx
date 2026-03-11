@@ -225,6 +225,19 @@ export const Franchises = () => {
         </p>
       </div>
 
+      {/* Office Photos */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+          <img src="/images/photos/reception-banner.jpeg" alt="Accueil JABB" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+          <img src="/images/photos/open-office.jpeg" alt="Open space JABB" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
+          <img src="/images/photos/team-duo-working.jpeg" alt="Équipe JABB au travail" className="w-full h-full object-cover" />
+        </div>
+      </div>
+
       {/* Stats bar */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="bg-jabb-blue/5 border border-jabb-blue/10 rounded-2xl p-6 text-center">
@@ -332,7 +345,7 @@ export const Franchises = () => {
                         <Users size={14} /> {ant.team} collaborateurs
                       </p>
                       <a href={`tel:${ant.phone}`}
-                        className="inline-flex mt-2 bg-jabb-accent text-slate-900 px-6 py-2.5 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all">
+                        className="inline-flex mt-2 bg-jabb-accent text-white px-6 py-2.5 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white hover:text-slate-900 transition-all">
                         Contacter
                       </a>
                     </div>
@@ -355,7 +368,7 @@ export const Franchises = () => {
             Pas de panique ! Nous livrons partout en France et nos équipes se déplacent pour vos projets. Contactez-nous directement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={`tel:${CONTACT.phone}`} className="inline-flex bg-jabb-accent text-slate-900 px-10 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all items-center gap-3 justify-center">
+            <a href={`tel:${CONTACT.phone}`} className="inline-flex bg-jabb-accent text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all items-center gap-3 justify-center">
               <Phone size={18} /> {CONTACT.phone}
             </a>
             <a href={`mailto:${CONTACT.email}`} className="inline-flex bg-white/10 text-white border border-white/20 px-10 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white/20 transition-all items-center gap-3 justify-center">

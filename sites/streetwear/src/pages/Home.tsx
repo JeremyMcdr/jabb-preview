@@ -11,18 +11,18 @@ const Hero = () => {
 
   return (
     <section className="flex flex-col lg:flex-row min-h-[85vh] overflow-hidden">
-      {/* Left: Visual Side - placeholder for photos/videos from Bertille */}
+      {/* Left: Visual Side */}
       <div className="lg:w-3/5 relative bg-slate-200 group min-h-[40vh] lg:min-h-0">
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
           style={{
-            backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuCx1ElI5NN00TWdoCSeFAHSZJ5BA9RF9GUHv6scd56kbDNQdLUaIG4sCbjlgaZww4nOKzMLEegsw0i6SPGdlARjBk99Y1qCZI4RmZPWOnGaYVGacp46B80CNgVFdsjQIv62bH9JbuMMwYnmKkTWdLCHBj4dgyP6OXnZuFPzFxCJYpnqr6Ne59sRX7HZ9oIy1HDGUSw8Y5kcdpFl7ILGg6dSjEmxrNWMXUN4JrjRS7845Oz73iAJDu7n7hilkOWW70QLMpMQZctpzLQ')`
+            backgroundImage: `url('/images/photos/showroom-wide.jpeg')`
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
         <div className="absolute bottom-8 left-8 right-8 md:bottom-10 md:left-10 md:right-10 flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <div className="inline-flex bg-jabb-accent text-slate-900 px-4 py-1 font-black text-xs uppercase skew-x-[-12deg]">
+            <div className="inline-flex bg-jabb-accent text-white px-4 py-1 font-black text-xs uppercase skew-x-[-12deg]">
               300 000 Références
             </div>
             <div className="inline-flex bg-white/20 backdrop-blur-sm text-white px-4 py-1 font-bold text-xs uppercase skew-x-[-12deg]">
@@ -128,7 +128,7 @@ const ProductCard: React.FC<{ product: typeof CATALOGUE[0]; offset?: boolean }> 
       </div>
       <button
         onClick={openQuote}
-        className="absolute bottom-6 right-6 size-12 bg-white text-jabb-blue rounded-full flex items-center justify-center translate-y-20 group-hover:translate-y-0 transition-transform duration-300 hover:bg-jabb-accent hover:text-slate-900"
+        className="absolute bottom-6 right-6 size-12 bg-white text-jabb-blue rounded-full flex items-center justify-center translate-y-20 group-hover:translate-y-0 transition-transform duration-300 hover:bg-jabb-accent hover:text-white"
       >
         <ShoppingCart size={20} />
       </button>

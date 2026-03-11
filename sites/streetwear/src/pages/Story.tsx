@@ -20,8 +20,8 @@ export const Story = () => (
       <div className="relative">
         <div className="aspect-square rounded-3xl overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1200&auto=format&fit=crop"
-            alt="L'atelier JABB"
+            src="/images/photos/showroom-wide.jpeg"
+            alt="Showroom JABB"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />

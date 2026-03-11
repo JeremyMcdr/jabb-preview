@@ -13,19 +13,19 @@ const PROFILES = [
   {
     name: "Associations étudiantes",
     description: "BDE, BDS, associations culturelles... Nos ambassadeurs étudiants promeuvent JABB dans leurs écoles et lors de leurs événements.",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
+    image: "/images/photos/team-group.jpeg",
     tag: "Étudiants"
   },
   {
     name: "Entrepreneurs",
     description: "Fondateurs de startups et dirigeants de PME qui utilisent JABB pour leurs besoins de merch et recommandent nos services.",
-    image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop",
+    image: "/images/photos/team-duo-working.jpeg",
     tag: "Professionnels"
   },
   {
     name: "Créateurs de contenu",
     description: "Influenceurs et créateurs qui partagent leur expérience JABB avec leur communauté sur Instagram, TikTok et LinkedIn.",
-    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
+    image: "/images/photos/desk-rollup-banner.jpeg",
     tag: "Créateurs"
   }
 ];
@@ -40,7 +40,7 @@ export const Ambassadors = () => (
       <p className="text-xl text-slate-500 font-medium leading-relaxed mb-10">
         Rejoignez notre communauté de 50 ambassadeurs à travers la France et participez à l'aventure JABB. Partagez, créez, inspirez.
       </p>
-      <Link to="/custom" className="inline-flex bg-jabb-accent text-slate-900 px-10 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all items-center gap-3">
+      <Link to="/custom" className="inline-flex bg-jabb-accent text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all items-center gap-3">
         Postuler <ArrowRight size={20} />
       </Link>
     </div>
@@ -70,7 +70,7 @@ export const Ambassadors = () => (
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden mb-6">
               <img src={profile.image} alt={profile.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-              <span className="absolute top-6 left-6 bg-jabb-accent text-slate-900 text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">{profile.tag}</span>
+              <span className="absolute top-6 left-6 bg-jabb-accent text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">{profile.tag}</span>
             </div>
             <h3 className="text-xl font-bold uppercase mb-2">{profile.name}</h3>
             <p className="text-sm text-slate-500 font-medium leading-relaxed">{profile.description}</p>
@@ -100,7 +100,7 @@ export const Ambassadors = () => (
     <div className="bg-jabb-blue rounded-3xl p-12 md:p-20 text-center text-white">
       <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8">Prêt à rejoindre l'aventure ?</h2>
       <p className="text-lg opacity-80 font-medium mb-12 max-w-xl mx-auto">Envoyez-nous votre candidature et intégrez la communauté des ambassadeurs JABB.</p>
-      <Link to="/custom" className="inline-flex bg-jabb-accent text-slate-900 px-12 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">
+      <Link to="/custom" className="inline-flex bg-jabb-accent text-white px-12 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl">
         Devenir Ambassadeur
       </Link>
     </div>

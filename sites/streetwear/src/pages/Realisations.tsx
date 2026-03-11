@@ -6,40 +6,40 @@ import { CLIENT_LOGOS } from '../constants';
 
 const REALISATIONS = [
   {
-    title: "Séminaire Canal+",
+    title: "Showroom JABB",
     category: "Corporate",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop",
-    description: "400 polos brodés et tote bags pour le séminaire annuel Canal+. Livraison en 5 jours."
+    image: "/images/photos/showroom-wide.jpeg",
+    description: "Notre showroom avec plus de 300 000 références textiles disponibles à la personnalisation."
   },
   {
-    title: "Gala ESSEC",
-    category: "Étudiant",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop",
-    description: "T-shirts, sweats et goodies pour le gala annuel de l'ESSEC. 800 pièces personnalisées."
-  },
-  {
-    title: "Onboarding L'Oréal",
+    title: "Maillots Sportifs Personnalisés",
     category: "Corporate",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop",
-    description: "Welcome packs premium pour les nouveaux collaborateurs L'Oréal : t-shirts, carnets, gourdes."
+    image: "/images/photos/sport-jersey.jpeg",
+    description: "Maillots de sport personnalisés pour clubs et entreprises. Marquage professionnel haute qualité."
   },
   {
-    title: "BDE Sciences Po",
-    category: "Étudiant",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop",
-    description: "Collection complète pour le BDE Sciences Po : hoodies, casquettes et accessoires aux couleurs de l'école."
-  },
-  {
-    title: "Team Building Lactalis",
+    title: "Présentation Client",
     category: "Corporate",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
-    description: "200 kits team building complets : t-shirts techniques, brassards, et goodies personnalisés."
+    image: "/images/photos/team-showing-textiles.jpeg",
+    description: "Accompagnement personnalisé : notre équipe vous présente les textiles et techniques de marquage adaptés à votre projet."
   },
   {
-    title: "Festival CentraleSupélec",
+    title: "Collection Textile",
     category: "Étudiant",
-    image: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1200&auto=format&fit=crop",
-    description: "Merchandising complet pour le festival annuel : 1 500 pièces textiles et objets promotionnels."
+    image: "/images/photos/logo-textiles.jpeg",
+    description: "Large gamme de textiles disponibles dans toutes les couleurs : t-shirts, sweats, polos, casquettes et plus."
+  },
+  {
+    title: "Espace de Travail JABB",
+    category: "Corporate",
+    image: "/images/photos/open-office.jpeg",
+    description: "Nos équipes au service de vos projets, dans nos bureaux modernes et dynamiques."
+  },
+  {
+    title: "Conseil & Accompagnement",
+    category: "Étudiant",
+    image: "/images/photos/team-meeting.jpeg",
+    description: "Réunion d'équipe pour préparer vos commandes : chaque projet est unique et mérite une attention particulière."
   }
 ];
 
@@ -104,7 +104,7 @@ export const Realisations = () => {
         <p className="text-lg opacity-80 font-medium mb-12 max-w-xl mx-auto">
           Quelle que soit la taille de votre projet, nous avons la solution. Devis gratuit en moins de 2 heures.
         </p>
-        <Link to="/custom" className="inline-flex bg-jabb-accent text-slate-900 px-12 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl items-center gap-3">
+        <Link to="/custom" className="inline-flex bg-jabb-accent text-white px-12 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all shadow-xl items-center gap-3">
           Lancez votre projet <ArrowRight size={20} />
         </Link>
       </div>

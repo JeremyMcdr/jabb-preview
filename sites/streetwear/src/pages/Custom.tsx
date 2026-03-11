@@ -69,18 +69,19 @@ export const Custom = () => {
           </div>
         </div>
 
-        {/* Right: placeholder for machine photo (coming tomorrow) */}
+        {/* Right: Showroom visual */}
         <div className="w-full lg:w-[500px]">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-slate-100 border-2 border-dashed border-slate-300 rounded-3xl aspect-[4/3] flex items-center justify-center"
+            className="rounded-3xl aspect-[4/3] overflow-hidden"
           >
-            <p className="text-slate-400 font-bold text-center px-8">
-              Photo machine de marquage<br />
-              <span className="text-sm font-medium">(à venir)</span>
-            </p>
+            <img
+              src="/images/photos/showroom-sofa.jpeg"
+              alt="Showroom JABB - Textiles personnalisés"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
 
           <div className="bg-slate-900 text-white p-6 rounded-2xl mt-6">

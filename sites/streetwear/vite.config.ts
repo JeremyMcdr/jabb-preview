@@ -4,7 +4,6 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig({
-  base: '/jabb-preview/streetwear/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

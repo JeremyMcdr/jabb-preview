@@ -75,7 +75,7 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
 
             {submitted ? (
               <div className="p-10 text-center">
-                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="bg-jabb-accent p-5 rounded-full text-slate-900 mb-6 inline-flex">
+                <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="bg-jabb-accent p-5 rounded-full text-white mb-6 inline-flex">
                   <CheckCircle2 size={48} />
                 </motion.div>
                 <h2 className="text-3xl font-black uppercase italic tracking-tighter mb-3">C'est envoyé !</h2>
@@ -281,7 +281,7 @@ const FloatingButtons = () => (
     </a>
     <a
       href={`tel:${CONTACT.phone}`}
-      className="size-14 bg-jabb-blue text-white rounded-full flex items-center justify-center shadow-lg shadow-jabb-blue/30 hover:scale-110 transition-transform"
+      className="size-14 bg-jabb-accent text-white rounded-full flex items-center justify-center shadow-lg shadow-jabb-accent/30 hover:scale-110 transition-transform"
       title="Appeler"
     >
       <Phone size={24} />
@@ -315,20 +315,20 @@ const Footer = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
           </p>
         </div>
         <div className="flex gap-3">
-          <a href={CONTACT.social.instagram} target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-jabb-blue transition-colors">
+          <a href={CONTACT.social.instagram} target="_blank" rel="noopener noreferrer" className="size-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
             <Instagram size={18} />
           </a>
-          <a href={CONTACT.social.linkedin} target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-jabb-blue transition-colors">
+          <a href={CONTACT.social.linkedin} target="_blank" rel="noopener noreferrer" className="size-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
             <Linkedin size={18} />
           </a>
-          <a href={CONTACT.social.facebook} target="_blank" rel="noopener noreferrer" className="size-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-jabb-blue transition-colors">
+          <a href={CONTACT.social.facebook} target="_blank" rel="noopener noreferrer" className="size-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
             <Facebook size={18} />
           </a>
         </div>
       </div>
 
       <div>
-        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-blue text-sm">Catégories</h4>
+        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-accent text-sm">Catégories</h4>
         <ul className="flex flex-col gap-4 text-slate-400 text-sm">
           <li><Link to="/" className="hover:text-white transition-colors">Page de garde</Link></li>
           <li><Link to="/textile" className="hover:text-white transition-colors">Textile</Link></li>
@@ -341,13 +341,13 @@ const Footer = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
       </div>
 
       <div>
-        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-blue text-sm">Contact</h4>
+        <h4 className="font-bold uppercase mb-6 tracking-widest text-jabb-accent text-sm">Contact</h4>
         <ul className="flex flex-col gap-4 text-slate-400 text-sm">
           <li><button onClick={onOpenQuote} className="hover:text-white transition-colors">Devis Express</button></li>
           <li><a href={`tel:${CONTACT.phone}`} className="hover:text-white transition-colors">Appeler</a></li>
           <li><a href={`mailto:${CONTACT.email}`} className="hover:text-white transition-colors">Mail</a></li>
         </ul>
-        <div className="mt-8 pt-6 border-t border-slate-800">
+        <div className="mt-8 pt-6 border-t border-white/10">
           <ul className="flex flex-col gap-3 text-slate-500 text-xs">
             <li><a href="#" className="hover:text-white transition-colors">Mentions Légales</a></li>
             <li><a href="#" className="hover:text-white transition-colors">CGV</a></li>
@@ -356,7 +356,7 @@ const Footer = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
       </div>
     </div>
 
-    <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-20 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
       <p className="text-slate-500 text-sm">&copy; 2025 JABB. Tous droits réservés.</p>
     </div>
   </footer>

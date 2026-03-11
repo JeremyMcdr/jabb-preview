@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
 
   --color-jabb-blue: #003368;
-  --color-jabb-accent: #e2ff3b;
-  --color-jabb-dark: #101922;
-  --color-jabb-light: #f5f7f8;
+  --color-jabb-accent: #4D9AD2;
+  --color-jabb-dark: #003368;
+  --color-jabb-light: #f7f7f7;
 }
 
 @layer base {

@@ -54,7 +54,7 @@ export const RSE = () => (
       </div>
       <div className="relative">
         <div className="aspect-[4/3] rounded-3xl overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1200&auto=format&fit=crop" alt="Engagement RSE" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src="/images/photos/team-group.jpeg" alt="Équipe JABB" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
         </div>
         <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-green-100 rounded-3xl -z-10" />
       </div>
@@ -83,7 +83,7 @@ export const RSE = () => (
         <p className="text-lg text-slate-400 font-medium leading-relaxed mb-12">
           Notre objectif : planter 1 000 arbres d'ici fin 2026 et atteindre 100% de matières éco-responsables dans notre catalogue textile.
         </p>
-        <Link to="/custom" className="inline-flex bg-jabb-accent text-slate-900 px-10 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all items-center gap-3">
+        <Link to="/custom" className="inline-flex bg-jabb-accent text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all items-center gap-3">
           Rejoindre le mouvement <ArrowRight size={20} />
         </Link>
       </div>
