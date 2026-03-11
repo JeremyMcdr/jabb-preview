@@ -228,13 +228,13 @@ export const Franchises = () => {
       {/* Office Photos */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="/images/photos/reception-banner.jpeg" alt="Accueil JABB" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}images/photos/reception-banner.jpeg`} alt="Accueil JABB" className="w-full h-full object-cover" />
         </div>
         <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="/images/photos/open-office.jpeg" alt="Open space JABB" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}images/photos/open-office.jpeg`} alt="Open space JABB" className="w-full h-full object-cover" />
         </div>
         <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
-          <img src="/images/photos/team-duo-working.jpeg" alt="Équipe JABB au travail" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}images/photos/team-duo-working.jpeg`} alt="Équipe JABB au travail" className="w-full h-full object-cover" />
         </div>
       </div>
 

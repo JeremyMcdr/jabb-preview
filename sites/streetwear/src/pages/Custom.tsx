@@ -78,7 +78,7 @@ export const Custom = () => {
             className="rounded-3xl aspect-[4/3] overflow-hidden"
           >
             <img
-              src="/images/photos/showroom-sofa.jpeg"
+              src={`${import.meta.env.BASE_URL}images/photos/showroom-sofa.jpeg`}
               alt="Showroom JABB - Textiles personnalisés"
               className="w-full h-full object-cover"
             />

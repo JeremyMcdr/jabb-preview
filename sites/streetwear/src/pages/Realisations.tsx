@@ -8,37 +8,37 @@ const REALISATIONS = [
   {
     title: "Showroom JABB",
     category: "Corporate",
-    image: "/images/photos/showroom-wide.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/showroom-wide.jpeg`,
     description: "Notre showroom avec plus de 300 000 références textiles disponibles à la personnalisation."
   },
   {
     title: "Maillots Sportifs Personnalisés",
     category: "Corporate",
-    image: "/images/photos/sport-jersey.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/sport-jersey.jpeg`,
     description: "Maillots de sport personnalisés pour clubs et entreprises. Marquage professionnel haute qualité."
   },
   {
     title: "Présentation Client",
     category: "Corporate",
-    image: "/images/photos/team-showing-textiles.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/team-showing-textiles.jpeg`,
     description: "Accompagnement personnalisé : notre équipe vous présente les textiles et techniques de marquage adaptés à votre projet."
   },
   {
     title: "Collection Textile",
     category: "Étudiant",
-    image: "/images/photos/logo-textiles.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/logo-textiles.jpeg`,
     description: "Large gamme de textiles disponibles dans toutes les couleurs : t-shirts, sweats, polos, casquettes et plus."
   },
   {
     title: "Espace de Travail JABB",
     category: "Corporate",
-    image: "/images/photos/open-office.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/open-office.jpeg`,
     description: "Nos équipes au service de vos projets, dans nos bureaux modernes et dynamiques."
   },
   {
     title: "Conseil & Accompagnement",
     category: "Étudiant",
-    image: "/images/photos/team-meeting.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/team-meeting.jpeg`,
     description: "Réunion d'équipe pour préparer vos commandes : chaque projet est unique et mérite une attention particulière."
   }
 ];

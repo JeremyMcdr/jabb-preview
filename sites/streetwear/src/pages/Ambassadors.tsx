@@ -13,19 +13,19 @@ const PROFILES = [
   {
     name: "Associations étudiantes",
     description: "BDE, BDS, associations culturelles... Nos ambassadeurs étudiants promeuvent JABB dans leurs écoles et lors de leurs événements.",
-    image: "/images/photos/team-group.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/team-group.jpeg`,
     tag: "Étudiants"
   },
   {
     name: "Entrepreneurs",
     description: "Fondateurs de startups et dirigeants de PME qui utilisent JABB pour leurs besoins de merch et recommandent nos services.",
-    image: "/images/photos/team-duo-working.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/team-duo-working.jpeg`,
     tag: "Professionnels"
   },
   {
     name: "Créateurs de contenu",
     description: "Influenceurs et créateurs qui partagent leur expérience JABB avec leur communauté sur Instagram, TikTok et LinkedIn.",
-    image: "/images/photos/desk-rollup-banner.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/desk-rollup-banner.jpeg`,
     tag: "Créateurs"
   }
 ];

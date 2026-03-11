@@ -38,12 +38,12 @@ export const Franchises = () => {
       {/* Photo Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
-          <img src="/images/photos/team-brainstorming.jpeg" alt="Brainstorming JABB" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}images/photos/team-brainstorming.jpeg`} alt="Brainstorming JABB" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <p className="absolute bottom-6 left-6 text-white font-black text-xl uppercase">Stratégie & Vision</p>
         </div>
         <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
-          <img src="/images/photos/open-office.jpeg" alt="Bureaux JABB" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}images/photos/open-office.jpeg`} alt="Bureaux JABB" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <p className="absolute bottom-6 left-6 text-white font-black text-xl uppercase">Environnement Moderne</p>
         </div>

@@ -54,7 +54,7 @@ export const RSE = () => (
       </div>
       <div className="relative">
         <div className="aspect-[4/3] rounded-3xl overflow-hidden">
-          <img src="/images/photos/team-group.jpeg" alt="Équipe JABB" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+          <img src={`${import.meta.env.BASE_URL}images/photos/team-group.jpeg`} alt="Équipe JABB" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
         </div>
         <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-green-100 rounded-3xl -z-10" />
       </div>

@@ -20,7 +20,7 @@ export const Story = () => (
       <div className="relative">
         <div className="aspect-square rounded-3xl overflow-hidden">
           <img
-            src="/images/photos/showroom-wide.jpeg"
+            src={`${import.meta.env.BASE_URL}images/photos/showroom-wide.jpeg`}
             alt="Showroom JABB"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

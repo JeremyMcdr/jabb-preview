@@ -7,13 +7,13 @@ const EVENTS = [
   {
     title: "Professionnels",
     description: "Solutions sur mesure pour les entreprises : séminaires, conférences, lancements de produits et team building.",
-    image: "/images/photos/team-brainstorming.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/team-brainstorming.jpeg`,
     tags: ["B2B", "Corporate", "Team Building"]
   },
   {
     title: "Étudiants",
     description: "Spécialiste des événements étudiants : soirées, galas ou festivals, adaptés aux besoins du public étudiant.",
-    image: "/images/photos/team-group-fun.jpeg",
+    image: `${import.meta.env.BASE_URL}images/photos/team-group-fun.jpeg`,
     tags: ["Gala", "Festival", "Associations"]
   }
 ];

@@ -1,3 +1,5 @@
+const B = import.meta.env.BASE_URL;
+
 export interface Product {
   id: number;
   name: string;
@@ -18,7 +20,7 @@ export const CATALOGUE: Product[] = [
     name: "T-shirt Bio190 IC",
     price: "Dès 8€ HT",
     category: "Textile",
-    image: "/products/T-shirtBio190IChomme-K3032IC.avif",
+    image: `${B}products/T-shirtBio190IChomme-K3032IC.avif`,
     tagStyle: "bg-jabb-accent text-white",
     rotation: "rotate-[-12deg]",
     description: "Coton bio 190g/m², coupe moderne, marquage personnalisé.",
@@ -30,7 +32,7 @@ export const CATALOGUE: Product[] = [
     name: "Sweat Capuche",
     price: "Dès 22€ HT",
     category: "Textile",
-    image: "/products/Sweat-shirtcapuchehomme-K476.avif",
+    image: `${B}products/Sweat-shirtcapuchehomme-K476.avif`,
     tagStyle: "bg-jabb-blue text-white",
     rotation: "rotate-[8deg]",
     description: "Sweat capuche premium, intérieur brossé, broderie ou sérigraphie.",
@@ -42,7 +44,7 @@ export const CATALOGUE: Product[] = [
     name: "Casquette 5 panneaux",
     price: "Dès 5€ HT",
     category: "Goodies",
-    image: "/products/Casquettes-de-baseball-MO1447-85.jpg",
+    image: `${B}products/Casquettes-de-baseball-MO1447-85.jpg`,
     tagStyle: "bg-jabb-accent text-white",
     rotation: "rotate-[-12deg]",
     description: "Casquette baseball 5 panneaux, broderie logo personnalisée.",
@@ -54,7 +56,7 @@ export const CATALOGUE: Product[] = [
     name: "Tote Bag promotionnel",
     price: "Dès 3€ HT",
     category: "Goodies",
-    image: "/products/HILL-todbag.jpg",
+    image: `${B}products/HILL-todbag.jpg`,
     tagStyle: "bg-jabb-blue text-white",
     rotation: "rotate-[8deg]",
     description: "Sac promotionnel résistant, sérigraphie HD grande surface.",
