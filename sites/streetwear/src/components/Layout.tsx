@@ -69,7 +69,7 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
             onClick={(e) => e.stopPropagation()}
             className="relative bg-white rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto shadow-2xl"
           >
-            <button onClick={handleClose} className="absolute top-5 right-5 p-2 hover:bg-slate-100 rounded-full z-10">
+            <button onClick={handleClose} className="absolute top-5 right-5 p-3 hover:bg-slate-100 rounded-full z-10">
               <X size={20} />
             </button>
 
@@ -136,7 +136,7 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
                     />
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1 block mb-1.5">Type de produit *</label>
                       <select
@@ -238,7 +238,7 @@ const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
           </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 hover:bg-slate-100 rounded-xl transition-colors"
+            className="md:hidden p-3 hover:bg-slate-100 rounded-xl transition-colors"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -315,13 +315,13 @@ const Footer = ({ onOpenQuote }: { onOpenQuote: () => void }) => (
           </p>
         </div>
         <div className="flex gap-3">
-          <a href={CONTACT.social.instagram} target="_blank" rel="noopener noreferrer" className="size-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
+          <a href={CONTACT.social.instagram} target="_blank" rel="noopener noreferrer" className="size-11 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
             <Instagram size={18} />
           </a>
-          <a href={CONTACT.social.linkedin} target="_blank" rel="noopener noreferrer" className="size-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
+          <a href={CONTACT.social.linkedin} target="_blank" rel="noopener noreferrer" className="size-11 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
             <Linkedin size={18} />
           </a>
-          <a href={CONTACT.social.facebook} target="_blank" rel="noopener noreferrer" className="size-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
+          <a href={CONTACT.social.facebook} target="_blank" rel="noopener noreferrer" className="size-11 bg-white/10 rounded-full flex items-center justify-center hover:bg-jabb-accent transition-colors">
             <Facebook size={18} />
           </a>
         </div>

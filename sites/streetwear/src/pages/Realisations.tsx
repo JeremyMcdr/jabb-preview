@@ -53,7 +53,7 @@ export const Realisations = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div className="max-w-2xl">
           <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm mb-4 block">Portfolio</span>
-          <h1 className="text-6xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-8">
+          <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-8">
             Nos <br /><span className="text-jabb-blue">Réalisations</span>.
           </h1>
           <p className="text-xl text-slate-500 font-medium leading-relaxed">
@@ -78,7 +78,7 @@ export const Realisations = () => {
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden mb-6">
               <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <span className="absolute top-6 left-6 bg-jabb-blue text-white text-[10px] font-bold px-4 py-1.5 rounded-full tracking-widest uppercase">{item.category}</span>
+              <span className="absolute top-6 left-6 bg-jabb-blue text-white text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase">{item.category}</span>
             </div>
             <h3 className="text-xl font-bold uppercase tracking-tight mb-2 group-hover:text-jabb-blue transition-colors">{item.title}</h3>
             <p className="text-sm text-slate-500 font-medium leading-relaxed">{item.description}</p>

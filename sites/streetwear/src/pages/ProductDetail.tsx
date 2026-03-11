@@ -116,7 +116,7 @@ export default function ProductDetail() {
                     key={i}
                     onClick={() => setSelectedColor(i)}
                     title={color.name}
-                    className={`w-9 h-9 rounded-full border-2 transition-all hover:scale-110 ${
+                    className={`w-11 h-11 rounded-full border-2 transition-all hover:scale-110 ${
                       i === selectedColor
                         ? 'border-jabb-blue ring-2 ring-jabb-blue/30 scale-110'
                         : 'border-slate-200'
@@ -188,7 +188,7 @@ export default function ProductDetail() {
       {/* Related Products */}
       {related.length > 0 && (
         <section className="mb-20">
-          <div className="flex items-end justify-between mb-8">
+          <div className="flex items-end justify-between flex-wrap gap-4 mb-8">
             <div>
               <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm">Catalogue</span>
               <h2 className="text-3xl font-black uppercase tracking-tighter mt-1">Produits similaires</h2>

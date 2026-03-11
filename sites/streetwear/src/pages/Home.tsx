@@ -141,10 +141,10 @@ const Products = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
-      <div className="flex items-end justify-between mb-12">
+      <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
         <div>
           <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm">Catalogue</span>
-          <h2 className="text-5xl font-black uppercase italic mt-2">Nos Best Sellers</h2>
+          <h2 className="text-3xl md:text-5xl font-black uppercase italic mt-2">Nos Best Sellers</h2>
         </div>
         <Link to="/textile" className="text-jabb-blue font-bold border-b-2 border-jabb-blue pb-1 hover:text-slate-900 hover:border-slate-900 transition-all">
           VOIR TOUT
@@ -172,16 +172,16 @@ const MarqueeBanner = () => (
     <div className="flex animate-marquee">
       {[0, 1].map(i => (
         <div key={i} className="flex gap-16 items-center shrink-0 pr-16">
-          <span className="text-4xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
+          <span className="text-2xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
             Devis en - de 2h <Zap size={32} className="text-jabb-accent" />
           </span>
-          <span className="text-4xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
+          <span className="text-2xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
             Marquage sur mesure <Brush size={32} className="text-jabb-accent" />
           </span>
-          <span className="text-4xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
+          <span className="text-2xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
             300K+ Références <Diamond size={32} className="text-jabb-accent" />
           </span>
-          <span className="text-4xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
+          <span className="text-2xl md:text-5xl font-black text-white italic uppercase flex items-center gap-3">
             Atelier de Marquage Français <Palette size={32} className="text-jabb-accent" />
           </span>
         </div>
@@ -226,7 +226,7 @@ const Testimonials = () => (
   <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
     <div className="text-center mb-8">
       <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm">Témoignages</span>
-      <h2 className="text-5xl font-black uppercase italic mt-2">Ils Nous Font Confiance</h2>
+      <h2 className="text-3xl md:text-5xl font-black uppercase italic mt-2">Ils Nous Font Confiance</h2>
     </div>
     <GoogleRating />
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

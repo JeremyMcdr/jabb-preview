@@ -34,7 +34,7 @@ export const Ambassadors = () => (
   <div className="px-6 py-12 max-w-7xl mx-auto space-y-24">
     <div className="text-center max-w-3xl mx-auto">
       <span className="text-jabb-accent font-bold uppercase tracking-widest text-sm mb-4 block">Programme Ambassadeurs</span>
-      <h1 className="text-6xl md:text-8xl font-bold uppercase tracking-tighter leading-[0.85] mb-8">
+      <h1 className="text-4xl md:text-8xl font-bold uppercase tracking-tighter leading-[0.85] mb-8">
         Devenez <br /><span className="text-jabb-accent">Ambassadeur</span>.
       </h1>
       <p className="text-xl text-slate-500 font-medium leading-relaxed mb-10">
@@ -46,16 +46,16 @@ export const Ambassadors = () => (
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div className="bg-jabb-accent/10 border border-jabb-accent/20 rounded-3xl p-10 text-center">
-        <p className="text-5xl font-bold text-jabb-accent mb-2">50</p>
+      <div className="bg-jabb-accent/10 border border-jabb-accent/20 rounded-3xl p-6 md:p-10 text-center">
+        <p className="text-3xl md:text-5xl font-bold text-jabb-accent mb-2">50</p>
         <p className="text-sm font-bold uppercase tracking-widest text-slate-400">Ambassadeurs actifs</p>
       </div>
-      <div className="bg-jabb-blue/5 border border-jabb-blue/10 rounded-3xl p-10 text-center">
-        <p className="text-5xl font-bold text-jabb-blue mb-2">100+</p>
+      <div className="bg-jabb-blue/5 border border-jabb-blue/10 rounded-3xl p-6 md:p-10 text-center">
+        <p className="text-3xl md:text-5xl font-bold text-jabb-blue mb-2">100+</p>
         <p className="text-sm font-bold uppercase tracking-widest text-slate-400">Écoles représentées</p>
       </div>
-      <div className="bg-slate-100 border border-slate-200 rounded-3xl p-10 text-center">
-        <p className="text-5xl font-bold text-slate-900 mb-2">&infin;</p>
+      <div className="bg-slate-100 border border-slate-200 rounded-3xl p-6 md:p-10 text-center">
+        <p className="text-3xl md:text-5xl font-bold text-slate-900 mb-2">&infin;</p>
         <p className="text-sm font-bold uppercase tracking-widest text-slate-400">Opportunités</p>
       </div>
     </div>
@@ -86,7 +86,7 @@ export const Ambassadors = () => (
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {BENEFITS.map((benefit, idx) => (
-          <motion.div key={idx} whileHover={{ y: -8 }} className="bg-white/5 border border-white/10 rounded-3xl p-10 backdrop-blur-sm space-y-4">
+          <motion.div key={idx} whileHover={{ y: -8 }} className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-10 backdrop-blur-sm space-y-4">
             <div className="bg-jabb-accent/20 p-4 rounded-2xl text-jabb-accent w-fit">
               <benefit.icon size={28} />
             </div>

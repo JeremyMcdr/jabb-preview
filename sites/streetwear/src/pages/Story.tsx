@@ -10,7 +10,7 @@ export const Story = () => (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div>
         <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm">Notre Histoire</span>
-        <h1 className="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-[0.85] mt-2 mb-8">
+        <h1 className="text-4xl md:text-8xl font-black uppercase italic tracking-tighter leading-[0.85] mt-2 mb-8">
           L'Atelier <br /><span className="text-jabb-blue">Créatif</span>.
         </h1>
         <p className="text-xl text-slate-500 font-medium leading-relaxed">
@@ -26,8 +26,8 @@ export const Story = () => (
             referrerPolicy="no-referrer"
           />
         </div>
-        <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-jabb-accent rounded-3xl -z-10" />
-        <div className="absolute -top-6 -right-6 w-24 h-24 bg-jabb-blue rounded-full -z-10 blur-2xl opacity-50" />
+        <div className="hidden md:block absolute -bottom-6 -left-6 w-40 h-40 bg-jabb-accent rounded-3xl -z-10" />
+        <div className="hidden md:block absolute -top-6 -right-6 w-24 h-24 bg-jabb-blue rounded-full -z-10 blur-2xl opacity-50" />
       </div>
     </div>
 
@@ -50,21 +50,21 @@ export const Story = () => (
 
     {/* Values */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div className="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+      <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-slate-100 space-y-4">
         <div className="bg-jabb-blue/10 p-4 rounded-2xl text-jabb-blue w-fit">
           <Target size={28} />
         </div>
         <h3 className="text-2xl font-black uppercase italic">Mission</h3>
         <p className="text-slate-500 font-medium">Accompagner les marques, écoles et assos dans la valorisation de leur identité à travers du textile et des objets de qualité.</p>
       </div>
-      <div className="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+      <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-slate-100 space-y-4">
         <div className="bg-jabb-accent/30 p-4 rounded-2xl text-slate-900 w-fit">
           <Heart size={28} />
         </div>
         <h3 className="text-2xl font-black uppercase italic">Valeurs</h3>
         <p className="text-slate-500 font-medium">Réactivité, créativité et engagement. On plante un arbre par commande et on privilégie les matières durables.</p>
       </div>
-      <div className="bg-white p-10 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+      <div className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-slate-100 space-y-4">
         <div className="bg-jabb-blue/10 p-4 rounded-2xl text-jabb-blue w-fit">
           <Globe size={28} />
         </div>

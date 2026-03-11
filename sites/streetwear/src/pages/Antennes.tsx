@@ -286,7 +286,7 @@ export const Franchises = () => {
             )}
           </AnimatePresence>
 
-          <div className="flex items-center gap-6 mt-6 pt-6 border-t border-slate-100 text-xs font-bold uppercase tracking-widest text-slate-400">
+          <div className="flex items-center flex-wrap gap-6 mt-6 pt-6 border-t border-slate-100 text-xs font-bold uppercase tracking-widest text-slate-400">
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 rounded bg-jabb-blue/15 border border-jabb-blue/40" />
               Zone couverte
@@ -345,7 +345,7 @@ export const Franchises = () => {
                         <Users size={14} /> {ant.team} collaborateurs
                       </p>
                       <a href={`tel:${ant.phone}`}
-                        className="inline-flex mt-2 bg-jabb-accent text-white px-6 py-2.5 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white hover:text-slate-900 transition-all">
+                        className="inline-flex mt-2 bg-jabb-accent text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white hover:text-slate-900 transition-all">
                         Contacter
                       </a>
                     </div>

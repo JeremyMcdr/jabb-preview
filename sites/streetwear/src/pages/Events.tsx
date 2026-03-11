@@ -29,7 +29,7 @@ export const Events = () => (
     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
       <div className="max-w-2xl">
         <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm mb-4 block">Jabb Events</span>
-        <h1 className="text-6xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-8">
+        <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-8">
           Marquez les <br /><span className="text-jabb-blue">Esprits</span>.
         </h1>
         <p className="text-xl text-slate-500 font-medium leading-relaxed">
@@ -48,17 +48,17 @@ export const Events = () => (
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="group relative h-[550px] rounded-3xl overflow-hidden flex flex-col justify-end p-12 text-white"
+          className="group relative h-[400px] md:h-[550px] rounded-3xl overflow-hidden flex flex-col justify-end p-6 md:p-12 text-white"
         >
           <img src={event.image} alt={event.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
           <div className="relative z-10 space-y-6">
             <div className="flex flex-wrap gap-2">
               {event.tags.map(tag => (
-                <span key={tag} className="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">{tag}</span>
+                <span key={tag} className="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">{tag}</span>
               ))}
             </div>
-            <h2 className="text-5xl font-bold uppercase tracking-tighter">{event.title}</h2>
+            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter">{event.title}</h2>
             <p className="text-lg opacity-80 font-medium max-w-md">{event.description}</p>
             <Link to="/custom" className="inline-flex items-center gap-3 bg-jabb-accent text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest hover:bg-white transition-all">
               En Savoir Plus <ArrowRight size={18} />

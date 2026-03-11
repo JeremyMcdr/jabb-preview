@@ -14,7 +14,7 @@ export const Custom = () => {
         <div className="flex-1 space-y-8">
           <div>
             <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm">Devis Express</span>
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mt-2 mb-6">
+            <h1 className="text-3xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] mt-2 mb-6">
               Créez votre <br /><span className="text-jabb-blue">produit sur mesure</span>.
             </h1>
             <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-lg">

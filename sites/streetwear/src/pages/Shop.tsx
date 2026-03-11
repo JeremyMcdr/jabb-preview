@@ -75,7 +75,7 @@ export const Shop = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
         <div>
           <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm">Textile</span>
-          <h1 className="text-5xl md:text-6xl font-black uppercase tracking-tighter mt-2">Nos Incontournables</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter mt-2">Nos Incontournables</h1>
           <p className="text-slate-500 font-medium mt-4 max-w-xl">
             Toutes nos pièces sont personnalisables — <span className="text-jabb-blue font-bold">Broderie, Sérigraphie, Transfert, Sublimation et Tampographie</span>.
           </p>

@@ -35,7 +35,7 @@ export const RSE = () => (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div>
         <span className="text-green-600 font-bold uppercase tracking-widest text-sm mb-4 block">Engagements RSE</span>
-        <h1 className="text-6xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-8">
+        <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-8">
           Notre <br />Responsabilité <br /><span className="text-green-600">Sociale</span>.
         </h1>
         <p className="text-xl text-slate-500 font-medium leading-relaxed mb-8">
@@ -44,11 +44,11 @@ export const RSE = () => (
         <div className="flex items-center gap-6">
           <div className="bg-green-500/10 px-6 py-4 rounded-2xl text-center">
             <p className="text-3xl font-bold text-green-600">650</p>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Arbres plantés</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Arbres plantés</p>
           </div>
           <div className="bg-jabb-blue/10 px-6 py-4 rounded-2xl text-center">
             <p className="text-3xl font-bold text-jabb-blue">97%</p>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Satisfaction</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Satisfaction</p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ export const RSE = () => (
         <div className="aspect-[4/3] rounded-3xl overflow-hidden">
           <img src={`${import.meta.env.BASE_URL}images/photos/team-group.jpeg`} alt="Équipe JABB" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
         </div>
-        <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-green-100 rounded-3xl -z-10" />
+        <div className="hidden md:block absolute -bottom-8 -left-8 w-40 h-40 bg-green-100 rounded-3xl -z-10" />
       </div>
     </div>
 

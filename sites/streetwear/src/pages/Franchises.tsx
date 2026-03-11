@@ -19,7 +19,7 @@ export const Franchises = () => {
       {/* Hero */}
       <div className="text-center max-w-3xl mx-auto">
         <span className="text-jabb-blue font-bold uppercase tracking-widest text-sm mb-4 block">Développement</span>
-        <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-6">
+        <h1 className="text-3xl md:text-7xl font-bold uppercase tracking-tighter leading-[0.9] mb-6">
           Devenez <span className="text-jabb-blue">Franchisé</span> JABB.
         </h1>
         <p className="text-xl text-slate-500 font-medium leading-relaxed mb-8">
